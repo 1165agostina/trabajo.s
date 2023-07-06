@@ -1,7 +1,6 @@
-/* vamos a poder agrupar estilos con diferentes estilos de valores. es para tener un patron ya armado, po ej:
-en _maps.scss la primera bariable q vamos a elegir va ser $cabecera: y vamos a poner un mobre a eleccion de lo q ueremos elegir por ej: 
-                                                                    bg-c(esto seria el $key): violeta (backgraund-color: violeta)
-                                                                    pd:20(esto seria el $key)(padding:20px
-luego en la hoja indicada vamos allamar .class{ backgraun-colo: map-get($map: nombre del mapa , $key )
-                                                padding: map-get($cabecera,pd)})px*/
-
+$flex:(
+    flx: display flex,
+    jusc: justify-content center,
+    alin:  align-items center,
+    
+);

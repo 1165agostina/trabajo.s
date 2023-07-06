@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   background-color: #f3e1ec;
   width: 100%;
@@ -23,17 +22,15 @@ body {
   flex-direction: column;
 }
 
-/* vamos a poder agrupar estilos con diferentes estilos de valores. es para tener un patron ya armado, po ej:
-en _maps.scss la primera bariable q vamos a elegir va ser $cabecera: y vamos a poner un mobre a eleccion de lo q ueremos elegir por ej: 
-                                                                    bg-c(esto seria el $key): violeta (backgraund-color: violeta)
-                                                                    pd:20(esto seria el $key)(padding:20px
-luego en la hoja indicada vamos allamar .class{ backgraun-colo: map-get($map: nombre del mapa , $key )
-                                                padding: map-get($cabecera,pd)})px*/
 /* variable unna debajo de la otra */ /* index */
 .lascard {
-  width: 100%;
   display: flex;
   justify-content: center;
+  /*puse ambos porq en porma de mapa no me lo toma */
+  display: display flex;
+  justify-content: justify-content center;
+  align-items: align-items center;
+  width: 100%;
 }
 .lascard .card {
   width: 200px;
@@ -50,7 +47,7 @@ luego en la hoja indicada vamos allamar .class{ backgraun-colo: map-get($map: no
   height: 210px;
 }
 .lascard .card img h2 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .lascard .card img h2 p a {
   border: 5px solid rgb(232, 159, 232);
@@ -61,7 +58,7 @@ luego en la hoja indicada vamos allamar .class{ backgraun-colo: map-get($map: no
 }
 
 .card h2 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .card a {
@@ -86,13 +83,14 @@ luego en la hoja indicada vamos allamar .class{ backgraun-colo: map-get($map: no
 
 /* biografia */
 .bio-m div {
-  display: flex;
-  justify-content: center;
+  display: display flex;
+  justify-content: justify-content center;
+  align-items: align-items center;
   align-items: center;
   flex-direction: column;
 }
 .bio-m div h1 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: font-l;
   font-size: 15px;
 }
 
@@ -102,7 +100,6 @@ luego en la hoja indicada vamos allamar .class{ backgraun-colo: map-get($map: no
 
 .bio-m div img {
   width: 30%;
-  /*  padding: 10px; */
   margin-top: 10px;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
   cursor: default;
@@ -110,7 +107,7 @@ luego en la hoja indicada vamos allamar .class{ backgraun-colo: map-get($map: no
 }
 
 .bio-m img:hover {
-  box-shadow: 0px 1px 10         px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
   transform: translateY(-3%);
 }
 
@@ -124,6 +121,7 @@ luego en la hoja indicada vamos allamar .class{ backgraun-colo: map-get($map: no
   margin-bottom: 30px;
 }
 .alb-m h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   position: absolute;
   border: 0.5px solid black;
   font-size: 20px;
@@ -179,8 +177,9 @@ luego en la hoja indicada vamos allamar .class{ backgraun-colo: map-get($map: no
     overflow: auto;
   }
   .alb-m {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: auto;
+    grid-template-rows: auto;
   }
   .alb-m .img-fotos {
     width: 70px;
@@ -203,18 +202,19 @@ luego en la hoja indicada vamos allamar .class{ backgraun-colo: map-get($map: no
 .index-audio {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  align-items: center;
 }
 .index-audio h2 {
-  font-family: "Times New Roman", Times, serif;
+  font-size: font-2;
 }
 .index-audio h2 li ul {
   list-style: none;
 }
 
 .videos {
-  display: flex;
-  justify-content: center;
+  display: display flex;
+  justify-content: justify-content center;
+  align-items: align-items center;
 }
 .videos .vide0-ifr {
   width: 310px;

@@ -1,10 +1,10 @@
 .index-audio{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+   display:flex;
+   justify-content: center;
+   align-items: center;
     @extend %bloques;
     h2{
-        font-family: 'Times New Roman', Times, serif;
+        font-size: font-2;
         li{
             ul{
                 list-style: none;
@@ -15,8 +15,9 @@
     
 }
 .videos{
-    display: flex;
-    justify-content: center;
+    display: map-get($flex , flx );
+    justify-content: map-get($flex , jusc );
+    align-items:  map-get($flex , alin ) ;
     @extend %bloques;
     .vide0-ifr{
         width: 310px;
