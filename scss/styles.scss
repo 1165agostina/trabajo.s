@@ -1,0 +1,18 @@
+body{
+    background-color: #f3e1ec;
+    width: 100%;
+    height: 100vh;
+
+}
+
+@import "./abstract/extend";
+@import "./abstract/maps";
+@import "./abstract/mixin";
+@import "./abstract/variables";
+
+
+
+@import "./componentes/main";
+@import "./componentes/div";
+
+

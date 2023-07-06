@@ -1,0 +1,10 @@
+@mixin medidas ($mrg, $padd,){
+    margin: $mrg;
+    padding: $padd;
+}
+
+@mixin disp ($dis, $colm, $row){
+    display: $dis;
+    grid-template-columns: $colm;
+    grid-template-rows: $row;
+}
