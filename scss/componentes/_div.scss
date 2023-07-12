@@ -1,17 +1,19 @@
 .index-audio{
-   display:flex;
-   justify-content: center;
-   align-items: center;
     @extend %bloques;
     h2{
-        font-size: font-2;
-        li{
-            ul{
-                list-style: none;
-            }
-        }
-       
+        font-size: $font-2;
+        margin-left: 15px;
+        ul{
+            display: map-get($flex , flx );
+            justify-content: map-get($flex , jusc );
+            align-items:  map-get($flex , alin ) ;
+            flex-direction: column;
+            list-style-type: none;
+        
+       }
+
     }
+
     
 }
 .videos{
@@ -33,4 +35,9 @@
     width: 150px;
     padding: 15px;
     margin: 10px;
+}
+
+@media (max-width:576px){
+    .index-audio{}
+
 }

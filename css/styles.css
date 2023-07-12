@@ -9,27 +9,20 @@ body {
   padding: 15px;
 }
 
-.videos, .index-audio, .galery-conteiner, .inte-main, .alb-m, .bio-m, .lascard {
+.videos, .index-audio, .galery-conteiner, .inte-main, .alb-m .album, .alb-m, .bio-m, .main-card {
   background-color: white;
   padding: 10px;
   margin: 15px;
 }
 
-.integrantes-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+/* variable unna debajo de la otra */ /* index */
+.main-card h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
-/* variable unna debajo de la otra */ /* index */
 .lascard {
   display: flex;
   justify-content: center;
-  /*puse ambos porq en porma de mapa no me lo toma */
-  display: display flex;
-  justify-content: justify-content center;
-  align-items: align-items center;
   width: 100%;
 }
 .lascard .card {
@@ -83,15 +76,15 @@ body {
 
 /* biografia */
 .bio-m div {
-  display: display flex;
-  justify-content: justify-content center;
-  align-items: align-items center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   align-items: center;
   flex-direction: column;
 }
 .bio-m div h1 {
-  font-family: font-l;
-  font-size: 15px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 25px;
 }
 
 .bio-m div p {
@@ -111,26 +104,27 @@ body {
   transform: translateY(-3%);
 }
 
-/* aca empieza albunes  */
-.alb-m {
+/* albumes  */
+.alb-m .album {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
-  gap: 10px 10px;
+  gap: 5px 5px;
   object-fit: fill;
   margin-bottom: 30px;
+  position: relative;
 }
-.alb-m h3 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+.alb-m .album h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   position: absolute;
   border: 0.5px solid black;
-  font-size: 20px;
-  margin: 5px;
+  font-size: 12px;
+  left: 15%;
+  top: 100%;
   padding: 5px;
 }
 
 .img-fotos {
-  position: relative;
   width: 150px;
   height: auto;
   object-fit: cover;
@@ -147,6 +141,13 @@ body {
 .integrantes-main p {
   text-align: center;
   width: 70%;
+}
+
+.integrantes-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* fotos */
@@ -187,6 +188,7 @@ body {
     object-fit: cover;
   }
   .alb-m h3 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-size: 10px;
   }
   .galery-conteiner {
@@ -199,22 +201,22 @@ body {
     width: 150px;
   }
 }
-.index-audio {
+.index-audio h2 {
+  font-size: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-left: 15px;
+}
+.index-audio h2 ul {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.index-audio h2 {
-  font-size: font-2;
-}
-.index-audio h2 li ul {
-  list-style: none;
+  flex-direction: column;
+  list-style-type: none;
 }
 
 .videos {
-  display: display flex;
-  justify-content: justify-content center;
-  align-items: align-items center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .videos .vide0-ifr {
   width: 310px;
