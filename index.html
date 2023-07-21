@@ -23,10 +23,10 @@
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav" >
                   <a class="nav-link active " aria-current="page" href="./index.html">Menu</a>
-                  <a class="nav-link" href="./biografia/biografia.html">Biografia</a>
-                  <a class="nav-link" href="./albunes/albumes.html">Albumes</a>
-                  <a class="nav-link" href="./integrantes/integrantes.html">integrantes</a>
-                  <a class="nav-link " href="./galeria/fotos.html" >Fotos</a>
+                  <a class="nav-link" href="./pag/biografia.html">Biografia</a>
+                  <a class="nav-link" href="./pag/albumes.html">Albumes</a>
+                  <a class="nav-link" href="./pag/integrantes.html">integrantes</a>
+                  <a class="nav-link " href="./pag/fotos.html" >Fotos</a>
                 </div>
               </div>
             </div>
@@ -35,46 +35,63 @@
 </header>
 
 
-  <main class="main-card" >
+  <main class="main-card container-fluid " >
+    <div class="row">
       <h1>Secciones</h1>
-    <div class="lascard">
-      <div class="card">
+     <div class="lascard row">
+      <div class="card col-md-2 col-7">
         <img src="./imagenes/miranda.jpeg" alt=" primer plano de los integrantes principales de la banda posando">
         <h2>Biografia</h2>
         <p>conoce mas sobre la historia de esta banda</p>
         <a href="./biografia/biografia.html" >Ir</a>
       </div>
-      <div class="card">
+      <div class="card col-md-2 col-7">
         <img src="./imagenes/miranda3.jpg" alt=" plano medio de los 5 integrantes de la banda, sonriendo sobre un fondo blanco y vestimenta del mismo color  ">
         <h2>Albumes</h2>
         <p>aca hay 16 albumes para recorrer y conocer sus canciones</p>
         <a href="./albunes/albumes.html" >Ir</a>
       </div>
-      <div class="card">
+      <div class="card col-md-2 col-7">
         <img src="./imagenes/miranda2.jpg" alt=" plano medio corto de los integrantes principales de la banda sobre un fondo rojo y vestimenta azul">
         <h2>Integrantes</h2>
         <p>conoce los participantes de la banda</p>
         <a href="./integrantes/integrantes.html">Ir</a>
       </div>
-      <div class="card">
+      <div class="card col-md-2 col-7">
         <img src="./imagenes/miranda4.jpg" alt=" plano medio corto lde los integrantes principales con efecto sepia y vestimenta antigua">
         <h2>Fotos</h2>
         <p>imagenes mas reconocidas</p>
         <a href="./galeria/fotos.html">Ir</a>
       </div>
-    </div>
+     </div>
+   </div>
 
   </main>
 
   <div class="index-audio" > 
 
     <h2>Temas mas conocidos </h2>
-    <ul>
-        <li> <img class="img-sect" src="./imagenes/don.jpg" alt="imagen de fondo blanco con titulo en el medio y debajo los integrantes en primer plano""></a> <audio controls src="./audios/miranda.don.mpeg"> don</audio></li>
-        <li> <img class="img-sect" src="./imagenes/perfecta.jpeg" alt="imagen con fondo blanco y cartelitos de colores que en el centro tienen os titulos de diferentes canciones "" > <audio controls src="./audios/perfecta.miranda.mpeg"> perfecta</audio></li>
-        <li> <img class="img-sect" src="./imagenes/notamusical.png"> <audio controls src="./audios/perfecta.mariabecerra_y_miranda.mpeg" alt="nota musical corchea ""> perfecta (2023)</audio></li>
-        <li> <img class="img-sect" src="./imagenes/don.jpg" > <audio controls src="./audios/treicion_miranda.mpeg" alt="imagen con fondo blanco y cartelitos de colores que en el centro tienen os titulos de diferentes canciones"">traicion</audio></li> 
-    </ul>
+    <div>
+      <img src="./imagenes/don.jpg" alt="imagen de fondo blanco con titulo en el medio y debajo los integrantes en primer plano" class="img-sect">
+        <audio controls src="./audios/miranda.don.mpeg">don</audio>
+      </img>
+    </div>
+
+    <div>
+      <img class="img-sect" src="./imagenes/perfecta.jpeg" alt="imagen con fondo blanco y cartelitos de colores que en el centro tienen os titulos de diferentes canciones "" > 
+      <audio controls src="./audios/perfecta.miranda.mpeg"> perfecta</audio>
+    </div>
+    <div>
+
+      <img class="img-sect" src="./imagenes/notamusical.png">
+       <audio controls src="./audios/perfecta.mariabecerra_y_miranda.mpeg" alt="nota musical corchea ""> perfecta (2023)</audio>
+    </div>
+
+    <div>
+      <img class="img-sect" src="./imagenes/don.jpg" > 
+      <audio controls src="./audios/treicion_miranda.mpeg" alt="imagen con fondo blanco y cartelitos de colores que en el centro tienen os titulos de diferentes canciones"">traicion</audio>
+    </div>
+    
 
   </div> 
 
@@ -95,19 +112,18 @@
 
 
   <footer>
+    <footer>
+      <nav aria-label="..." class="container-fluid">
+          <ul class="pagination pagination-lg row justify-content-center">
+            <li class="page-item col-md-2" aria-current="page"><a class="page-link" href="./index.html">1</a></li>
+            <li class="page-item active col-md-2 col-2"><a class="page-link" href="./pag/biografia.html">2</a></li>
+            <li class="page-item col-md-2 col-2"><a class="page-link" href="./pag/albumes.html">3</a></li>
+            <li class="page-item col-md-2 col-2" ><a class="page-link" href="./pag/integrantes.html">4</a></li>
+            <li class="page-item col-md-2 col-2"><a class="page-link" href="./pag/fotos.html">5</a></li>
+          </ul>
+        </nav>
 
-
-    <nav aria-label="..." class="container-fluid">
-        <ul class="pagination pagination-lg row justify-content-center">
-          <li class="page-item active col-md-2 col-2" aria-current="page"><a class="page-link" href="./index.html">1</a></li>
-          <li class="page-item col-md-2 col-2"><a class="page-link" href="./biografia/biografia.html">2</a></li>
-          <li class="page-item col-md-2 col-2"><a class="page-link" href="./albunes/albumes.html">3</a></li>
-          <li class="page-item col-md-2 col-2"><a class="page-link" href="./integrantes/integrantes.html">4</a></li>
-          <li class="page-item col-md-2 col-2"><a class="page-link" href="./galeria/fotos.html">5</a></li>
-        </ul>
-      </nav>
-
-  </footer>
+    </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>

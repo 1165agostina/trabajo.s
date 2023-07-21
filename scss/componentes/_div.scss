@@ -3,18 +3,14 @@
     h2{
         font-size: $font-2;
         margin-left: 15px;
-        ul{
-            display: map-get($flex , flx );
-            justify-content: map-get($flex , jusc );
-            align-items:  map-get($flex , alin ) ;
-            flex-direction: column;
-            list-style-type: none;
-        
-       }
-
     }
-
-    
+.index-audio{
+    div{
+        display: map-get($flex , flx );
+        justify-content: map-get($flex , jusc );
+        align-items:  map-get($flex , alin ) ;
+    }
+}
 }
 .videos{
     display: map-get($flex , flx );
@@ -35,9 +31,5 @@
     width: 150px;
     padding: 15px;
     margin: 10px;
-}
-
-@media (max-width:576px){
-    .index-audio{}
-
+    border: 0.5px solid black;    
 }

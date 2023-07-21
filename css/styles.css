@@ -9,7 +9,7 @@ body {
   padding: 15px;
 }
 
-.videos, .index-audio, .galery-conteiner, .inte-main, .alb-m .album, .alb-m, .bio-m, .main-card {
+.videos, .index-audio, .galery-conteiner, .inte-main, .alb-m, .bio-m, .main-card {
   background-color: white;
   padding: 10px;
   margin: 15px;
@@ -21,12 +21,9 @@ body {
 }
 
 .lascard {
-  display: flex;
-  justify-content: center;
   width: 100%;
 }
 .lascard .card {
-  width: 200px;
   margin: 20px;
   border-radius: 10px;
   overflow: hidden;
@@ -38,6 +35,7 @@ body {
 .lascard .card img {
   width: 100%;
   height: 210px;
+  object-fit: cover;
 }
 .lascard .card img h2 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -105,11 +103,12 @@ body {
 }
 
 /* albumes  */
-.alb-m .album {
+.alb-m {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
-  gap: 5px 5px;
+}
+.alb-m .album {
   object-fit: fill;
   margin-bottom: 30px;
   position: relative;
@@ -125,7 +124,7 @@ body {
 }
 
 .img-fotos {
-  width: 150px;
+  width: 250px;
   height: auto;
   object-fit: cover;
   border: 2px solid black;
@@ -183,9 +182,9 @@ body {
     grid-template-rows: auto;
   }
   .alb-m .img-fotos {
-    width: 70px;
     height: auto;
     object-fit: cover;
+    margin: 5px;
   }
   .alb-m h3 {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -205,12 +204,10 @@ body {
   font-size: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin-left: 15px;
 }
-.index-audio h2 ul {
+.index-audio .index-audio div {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  list-style-type: none;
 }
 
 .videos {
@@ -230,6 +227,7 @@ body {
   width: 150px;
   padding: 15px;
   margin: 10px;
+  border: 0.5px solid black;
 }
 
 /*# sourceMappingURL=styles.css.map */
