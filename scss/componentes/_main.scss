@@ -197,11 +197,7 @@
 
 /* responsive */
  @media (max-width:576px){
-    .lascard{
-        @include disp (grid,repeat(2,1fr), auto );
-        margin: 10px;
-        gap: 10px;
-    }
+
     .bio-m{
         img{
             width: 350px;
@@ -209,7 +205,7 @@
         }
     }
     .alb-m{
-        @include disp (grid,repeat(2,1fr), auto );
+        @include disp (grid,repeat(1,1fr), auto );
         .img-fotos{
             height: auto;
             object-fit: cover;
